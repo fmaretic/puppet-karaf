@@ -1,0 +1,13 @@
+{
+  "author": "Filip Maretic",
+  "dependencies": [],
+  "license": "MIT",
+  "name": "fmaretic-karaf",
+  "operatingsystem_support": [],
+  "project_page": "",
+  "requirements": [],
+  "source": "https://github.com/fmaretic/puppet-karaf",
+  "summary": "Module for installing Apache Karaf",
+  "tags": ["karaf"],
+  "version": "0.1.0"
+}
