@@ -11,14 +11,14 @@
 # Sample Usage: include 'karaf'
 #
 class karaf(
-  $ensure     = $::karaf::params::ensure,
-  $target     = $::karaf::params::target,
-  $src_target = $::karaf::params::src_target,
+  $ensure  = $::karaf::params::ensure,
+  $version = $::karaf::params::version,
+  $target  = $::karaf::params::target,
 ) inherits karaf::params {
   
   class {'karaf::install': 
-    ensure     => $ensure,
-    target     => $target,
-    src_target => $src_target,
+    ensure  => $ensure,
+    version => $version,
+    target  => $target,
   }
 }

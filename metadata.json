@@ -1,6 +1,6 @@
 {
   "name": "fmaretic-karaf",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Filip Maretic",
   "summary": "Module for installing Apache Karaf",
   "license": "MIT",
