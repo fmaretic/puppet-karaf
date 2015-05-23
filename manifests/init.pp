@@ -1,15 +1,24 @@
 # Class: karaf
 #
-# This module manages karaf
+# This module manages Apache Karaf
 #
 # Parameters: none
 #
-# Actions:
+# Actions: Installs Apache Karaf
 #
-# Requires: see Modulefile
+# Requires: see metadata.json
 #
-# Sample Usage:
+# Sample Usage: include 'karaf'
 #
-class karaf {
-
+class karaf(
+  $ensure     = $::karaf::params::ensure,
+  $target     = $::karaf::params::target,
+  $src_target = $::karaf::params::src_target,
+) inherits karaf::params {
+  
+  class {'karaf::install': 
+    ensure     => $ensure,
+    target     => $target,
+    src_target => $src_target,
+  }
 }
